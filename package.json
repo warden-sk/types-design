@@ -1,0 +1,19 @@
+{
+  "devDependencies": {
+    "@types/react": "^17.0.20",
+    "@typescript-eslint/eslint-plugin": "^4.31.1",
+    "@typescript-eslint/parser": "^4.31.1",
+    "@warden-sk/babel-plugin": "^1.4.0",
+    "@warden-sk/eslint-config": "github:warden-sk/eslint-config",
+    "eslint": "^7.32.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.4.0",
+    "typescript": "^4.4.3"
+  },
+  "name": "@types/warden-sk__babel-plugin",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/warden-sk/types-design.git"
+  },
+  "version": "1.0.0"
+}
