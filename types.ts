@@ -50,7 +50,7 @@ export const Flex = ['1', 'none'] as const;
 export const FlexDirection = ['column', 'column-reverse', 'row', 'row-reverse'] as const;
 // https://drafts.csswg.org/css-flexbox-1/#propdef-flex-wrap
 export const FlexWrap = ['nowrap', 'wrap', 'wrap-reverse'] as const;
-export const FontSize = ['1', '2', '3', '4', '5', '6'] as const;
+export const FontSize = ['-1', '-2', '1', '10', '2', '3', '4', '5', '6', '7', '8', '9'] as const;
 // https://drafts.csswg.org/css-align/#propdef-justify-content
 export const JustifyContent = ['left', 'right', ...ContentDistribution, ...ContentPosition] as const;
 // https://drafts.csswg.org/css-align/#propdef-justify-items
