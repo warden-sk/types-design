@@ -16,6 +16,7 @@ interface A {
   flex?: EncodedResponsiveClassName<typeof t.Flex[number]>;
   flexDirection?: EncodedResponsiveClassName<typeof t.FlexDirection[number]>;
   flexWrap?: EncodedResponsiveClassName<typeof t.FlexWrap[number]>;
+  fontSize?: EncodedResponsiveClassName<typeof t.FontSize[number]>;
   justifyContent?: EncodedResponsiveClassName<typeof t.JustifyContent[number]>;
   justifyItems?: EncodedResponsiveClassName<typeof t.JustifyItems[number]>;
   justifySelf?: EncodedResponsiveClassName<typeof t.JustifySelf[number]>;
