@@ -93,6 +93,7 @@ export const MarginLeft = [
   '9/12',
   ...S,
 ] as const;
+export const TextAlign = ['center', 'end', 'justify', 'left', 'right', 'start'] as const;
 export const Width = [
   '0',
   '1/12',

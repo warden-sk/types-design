@@ -33,6 +33,7 @@ interface A {
   pT?: EncodedResponsiveClassName<typeof t.S[number]>;
   pX?: EncodedResponsiveClassName<typeof t.S[number]>;
   pY?: EncodedResponsiveClassName<typeof t.S[number]>;
+  textAlign?: EncodedResponsiveClassName<typeof t.TextAlign[number]>;
   width?: EncodedResponsiveClassName<typeof t.Width[number]>;
 }
 declare module 'react' {
