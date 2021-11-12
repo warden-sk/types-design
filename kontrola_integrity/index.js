@@ -3,7 +3,15 @@
  */
 
 const fs = require('fs');
+const http = require('https');
 const path = require('path');
+
+function fileRows(file, from, to) {
+  return file
+    .toString()
+    .split(/\n/)
+    .filter((a, b) => b >= from - 1 && b <= to - 1);
+}
 
 const notAllowed = [
   'animate',
@@ -65,10 +73,8 @@ const notAllowed = [
   'view',
 ];
 
-function test(input) {
+function test(rows) {
   const elements = {};
-
-  const rows = input.split(/\n/);
 
   rows.forEach(row => {
     const [, l, r] = /^\s+([^:]+):\s+([^;]+);/.exec(row) ?? [];
@@ -78,10 +84,31 @@ function test(input) {
   return elements;
 }
 
-const a = test(fs.readFileSync(path.resolve(__dirname, './a.txt')).toString());
-const b = test(fs.readFileSync(path.resolve(__dirname, './b.txt')).toString());
+http
+  .request(
+    {
+      host: 'raw.githubusercontent.com',
+      path: '/DefinitelyTyped/DefinitelyTyped/master/types/react/index.d.ts',
+    },
+    response => {
+      let i = 0;
+      let file = '';
 
-Object.entries(a).forEach(([aL, aR]) => {
-  if (!(aL in b)) console.log(`"${aL}" is not in "b"`);
-  else if (aR !== b[aL]) console.log(`"aR" does not equal "bR"\n    - ${aR}\n    - ${b[aL]}`);
-});
+      response.on('data', chunk => {
+        file += chunk;
+        i += chunk.byteLength;
+        console.log(((i / response.headers['content-length']) * 100).toFixed(2));
+      });
+
+      response.on('end', () => {
+        const a = test(fileRows(file, 3109, 3289));
+        const b = test(fileRows(fs.readFileSync(path.resolve(__dirname, '../index.d.ts')), 44, 156));
+
+        Object.entries(a).forEach(([aL, aR]) => {
+          if (!(aL in b)) console.log(`"${aL}" is not in "b"`);
+          else if (aR !== b[aL]) console.log(`"aR" does not equal "bR"\n    - ${aR}\n    - ${b[aL]}`);
+        });
+      });
+    }
+  )
+  .end();
