@@ -1,46 +1,3 @@
-/*
- * Copyright 2021 Marek Kobida
- */
-
-import 'react';
-import * as t from './types';
-import { EncodedClassName } from '@warden-sk/babel-plugin/private/decodeClassName';
-import { EncodedResponsiveClassName } from '@warden-sk/babel-plugin/private/decodeResponsiveClassName';
-
-declare global {
-  interface A {
-    alignContent?: EncodedResponsiveClassName<typeof t.AlignContent[number]>;
-    alignItems?: EncodedResponsiveClassName<typeof t.AlignItems[number]>;
-    alignSelf?: EncodedResponsiveClassName<typeof t.AlignSelf[number]>;
-    className?: EncodedClassName;
-    display?: EncodedResponsiveClassName<typeof t.Display[number]>;
-    flex?: EncodedResponsiveClassName<typeof t.Flex[number]>;
-    flexDirection?: EncodedResponsiveClassName<typeof t.FlexDirection[number]>;
-    flexWrap?: EncodedResponsiveClassName<typeof t.FlexWrap[number]>;
-    fontSize?: EncodedResponsiveClassName<typeof t.FontSize[number]>;
-    justifyContent?: EncodedResponsiveClassName<typeof t.JustifyContent[number]>;
-    justifyItems?: EncodedResponsiveClassName<typeof t.JustifyItems[number]>;
-    justifySelf?: EncodedResponsiveClassName<typeof t.JustifySelf[number]>;
-    m?: EncodedResponsiveClassName<typeof t.S[number]>;
-    mB?: EncodedResponsiveClassName<typeof t.S[number]>;
-    mL?: EncodedResponsiveClassName<typeof t.MarginLeft[number]>;
-    mR?: EncodedResponsiveClassName<typeof t.S[number]>;
-    mT?: EncodedResponsiveClassName<typeof t.S[number]>;
-    mX?: EncodedResponsiveClassName<typeof t.S[number]>;
-    mY?: EncodedResponsiveClassName<typeof t.S[number]>;
-    p?: EncodedResponsiveClassName<typeof t.S[number]>;
-    pB?: EncodedResponsiveClassName<typeof t.S[number]>;
-    pL?: EncodedResponsiveClassName<typeof t.S[number]>;
-    pR?: EncodedResponsiveClassName<typeof t.S[number]>;
-    pT?: EncodedResponsiveClassName<typeof t.S[number]>;
-    pX?: EncodedResponsiveClassName<typeof t.S[number]>;
-    pY?: EncodedResponsiveClassName<typeof t.S[number]>;
-    textAlign?: EncodedResponsiveClassName<typeof t.TextAlign[number]>;
-    width?: EncodedResponsiveClassName<typeof t.Width[number]>;
-  }
-}
-declare module 'react' {
-  namespace JSX {
     interface IntrinsicElements {
       a: A | React.DetailedHTMLProps<React.AnchorHTMLAttributes<HTMLAnchorElement>, HTMLAnchorElement>;
       abbr: A | React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>;
@@ -154,5 +111,3 @@ declare module 'react' {
       video: A | React.DetailedHTMLProps<React.VideoHTMLAttributes<HTMLVideoElement>, HTMLVideoElement>;
       wbr: A | React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>;
     }
-  }
-}
