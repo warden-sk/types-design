@@ -107,7 +107,9 @@ http
         Object.entries(a).forEach(([aL, aR], i) => {
           if (!(aL in b)) console.log(`"${aL}" is not in "@types/warden-sk/design"`);
           else if (aR !== b[aL])
-            console.log(`(${i})(@types/react) ${aR}\n\x1b[31m(${i})(@types/warden-sk/design) ${b[aL]}\x1b[0m`);
+            console.log(
+              `(${i})(@types/react)            ${aR}\n\x1b[31m(${i})(@types/warden-sk/design) ${b[aL]}\x1b[0m`
+            );
         });
       });
     }
