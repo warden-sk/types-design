@@ -102,7 +102,7 @@ http
 
       response.on('end', () => {
         const a = test(fileRows(file, 3109, 3289));
-        const b = test(fileRows(fs.readFileSync(path.resolve(__dirname, '../index.d.ts')), 44, 156));
+        const b = test(fileRows(fs.readFileSync(path.resolve(__dirname, './index.d.ts')), 44, 156));
 
         Object.entries(a).forEach(([aL, aR]) => {
           if (!(aL in b)) console.log(`"${aL}" is not in "b"`);
