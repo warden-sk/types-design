@@ -91,12 +91,12 @@ http
       path: '/DefinitelyTyped/DefinitelyTyped/master/types/react/index.d.ts',
     },
     response => {
-      let i = 0;
-      let file = '';
+      let i = 0,
+        file = '';
 
       response.on('data', chunk => {
-        file += chunk;
         i += chunk.byteLength;
+        file += chunk;
         console.log(((i / response.headers['content-length']) * 100).toFixed(2));
       });
 
@@ -104,9 +104,10 @@ http
         const a = test(fileRows(file, 3109, 3289));
         const b = test(fileRows(fs.readFileSync(path.resolve(__dirname, './index.d.ts')), 44, 156));
 
-        Object.entries(a).forEach(([aL, aR]) => {
-          if (!(aL in b)) console.log(`"${aL}" is not in "b"`);
-          else if (aR !== b[aL]) console.log(`"aR" does not equal "bR"\n    - ${aR}\n    - ${b[aL]}`);
+        Object.entries(a).forEach(([aL, aR], i) => {
+          if (!(aL in b)) console.log(`"${aL}" is not in "@types/warden-sk/design"`);
+          else if (aR !== b[aL])
+            console.log(`(${i})(@types/react) ${aR}\n\x1b[31m(${i})(@types/warden-sk/design) ${b[aL]}\x1b[0m`);
         });
       });
     }
