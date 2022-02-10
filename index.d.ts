@@ -7,7 +7,6 @@ import * as t from './types';
 import { EncodedClassName } from '@warden-sk/babel-plugin/private/decodeClassName';
 import { EncodedResponsiveClassName } from '@warden-sk/babel-plugin/private/decodeResponsiveClassName';
 
-type B<T> = A & Omit<T, 'className'>;
 declare global {
   interface A {
     alignContent?: EncodedResponsiveClassName<typeof t.AlignContent[number]>;
@@ -39,6 +38,7 @@ declare global {
     textAlign?: EncodedResponsiveClassName<typeof t.TextAlign[number]>;
     width?: EncodedResponsiveClassName<typeof t.Width[number]>;
   }
+  type B<T> = A & Omit<T, 'className'>;
 }
 declare module 'react' {
   namespace JSX {
