@@ -77,8 +77,11 @@ function test(rows) {
   const elements = {};
 
   rows.forEach(row => {
-    const [, l, r] = /^\s+([^:]+):\s+([^;]+);/.exec(row) ?? [];
-    l && r && notAllowed.indexOf(l) === -1 && (elements[l.replace(/"/g, '')] = r.replace(/A\s+\|\s+/g, ''));
+    const [, l, r] = /^\s*([^:]+):\s*([^;]+);/.exec(row) ?? [];
+    l &&
+      r &&
+      notAllowed.indexOf(l) === -1 &&
+      (elements[l.replace(/"/g, '')] = r.replace(/^B</g, '').replace(/>>$/g, '>'));
   });
 
   return elements;
