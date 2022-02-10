@@ -43,7 +43,7 @@ declare global {
 declare module 'react' {
   namespace JSX {
     interface IntrinsicElements {
-      a: B<React.DetailedHTMLPropssdsd<React.AnchorsdsdHTMLAttributes<HTMLAnchorElement>, HTMLAnchorElement>>;
+      a: B<React.DetailedHTMLProps<React.AnchorHTMLAttributes<HTMLAnchorElement>, HTMLAnchorElement>>;
       abbr: B<React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>>;
       address: B<React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>>;
       area: B<React.DetailedHTMLProps<React.AreaHTMLAttributes<HTMLAreaElement>, HTMLAreaElement>>;
