@@ -46,6 +46,22 @@ export const Display = [
 ] as const;
 // https://drafts.csswg.org/css-flexbox-1/#propdef-flex
 export const Flex = ['1', 'none'] as const;
+export const FlexBasis = [
+  '0',
+  '1/12',
+  '10/12',
+  '100',
+  '11/12',
+  '2/12',
+  '3/12',
+  '4/12',
+  '5/12',
+  '6/12',
+  '7/12',
+  '8/12',
+  '9/12',
+  'auto',
+] as const;
 // https://drafts.csswg.org/css-flexbox-1/#propdef-flex-direction
 export const FlexDirection = ['column', 'column-reverse', 'row', 'row-reverse'] as const;
 // https://drafts.csswg.org/css-flexbox-1/#propdef-flex-wrap
@@ -95,19 +111,4 @@ export const MarginLeft = [
   ...S,
 ] as const;
 export const TextAlign = ['center', 'end', 'justify', 'left', 'right', 'start'] as const;
-export const Width = [
-  '0',
-  '1/12',
-  '10/12',
-  '100',
-  '11/12',
-  '2/12',
-  '3/12',
-  '4/12',
-  '5/12',
-  '6/12',
-  '7/12',
-  '8/12',
-  '9/12',
-  'auto',
-] as const;
+export const Width = FlexBasis;

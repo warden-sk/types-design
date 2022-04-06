@@ -15,6 +15,7 @@ declare global {
     className?: EncodedClassName;
     display?: EncodedResponsiveClassName<typeof t.Display[number]>;
     flex?: EncodedResponsiveClassName<typeof t.Flex[number]>;
+    flexBasis?: EncodedResponsiveClassName<typeof t.FlexBasis[number]>;
     flexDirection?: EncodedResponsiveClassName<typeof t.FlexDirection[number]>;
     flexWrap?: EncodedResponsiveClassName<typeof t.FlexWrap[number]>;
     fontSize?: EncodedResponsiveClassName<typeof t.FontSize[number]>;
@@ -54,7 +55,7 @@ declare module 'react' {
       base: B<React.DetailedHTMLProps<React.BaseHTMLAttributes<HTMLBaseElement>, HTMLBaseElement>>;
       bdi: B<React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>>;
       bdo: B<React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>>;
-      blockquote: B<React.DetailedHTMLProps<React.BlockquoteHTMLAttributes<HTMLElement>, HTMLElement>>;
+      blockquote: B<React.DetailedHTMLProps<React.BlockquoteHTMLAttributes<HTMLQuoteElement>, HTMLQuoteElement>>;
       body: B<React.DetailedHTMLProps<React.HTMLAttributes<HTMLBodyElement>, HTMLBodyElement>>;
       br: B<React.DetailedHTMLProps<React.HTMLAttributes<HTMLBRElement>, HTMLBRElement>>;
       button: B<React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>>;
@@ -67,8 +68,8 @@ declare module 'react' {
       data: B<React.DetailedHTMLProps<React.DataHTMLAttributes<HTMLDataElement>, HTMLDataElement>>;
       datalist: B<React.DetailedHTMLProps<React.HTMLAttributes<HTMLDataListElement>, HTMLDataListElement>>;
       dd: B<React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>>;
-      del: B<React.DetailedHTMLProps<React.DelHTMLAttributes<HTMLElement>, HTMLElement>>;
-      details: B<React.DetailedHTMLProps<React.DetailsHTMLAttributes<HTMLElement>, HTMLElement>>;
+      del: B<React.DetailedHTMLProps<React.DelHTMLAttributes<HTMLModElement>, HTMLModElement>>;
+      details: B<React.DetailedHTMLProps<React.DetailsHTMLAttributes<HTMLDetailsElement>, HTMLDetailsElement>>;
       dfn: B<React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>>;
       div: B<React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>>;
       dl: B<React.DetailedHTMLProps<React.HTMLAttributes<HTMLDListElement>, HTMLDListElement>>;
@@ -105,14 +106,14 @@ declare module 'react' {
       mark: B<React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>>;
       menu: B<React.DetailedHTMLProps<React.MenuHTMLAttributes<HTMLElement>, HTMLElement>>;
       meta: B<React.DetailedHTMLProps<React.MetaHTMLAttributes<HTMLMetaElement>, HTMLMetaElement>>;
-      meter: B<React.DetailedHTMLProps<React.MeterHTMLAttributes<HTMLElement>, HTMLElement>>;
+      meter: B<React.DetailedHTMLProps<React.MeterHTMLAttributes<HTMLMeterElement>, HTMLMeterElement>>;
       nav: B<React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>>;
       noscript: B<React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>>;
       object: B<React.DetailedHTMLProps<React.ObjectHTMLAttributes<HTMLObjectElement>, HTMLObjectElement>>;
       ol: B<React.DetailedHTMLProps<React.OlHTMLAttributes<HTMLOListElement>, HTMLOListElement>>;
       optgroup: B<React.DetailedHTMLProps<React.OptgroupHTMLAttributes<HTMLOptGroupElement>, HTMLOptGroupElement>>;
       option: B<React.DetailedHTMLProps<React.OptionHTMLAttributes<HTMLOptionElement>, HTMLOptionElement>>;
-      output: B<React.DetailedHTMLProps<React.OutputHTMLAttributes<HTMLElement>, HTMLElement>>;
+      output: B<React.DetailedHTMLProps<React.OutputHTMLAttributes<HTMLOutputElement>, HTMLOutputElement>>;
       p: B<React.DetailedHTMLProps<React.HTMLAttributes<HTMLParagraphElement>, HTMLParagraphElement>>;
       param: B<React.DetailedHTMLProps<React.ParamHTMLAttributes<HTMLParamElement>, HTMLParamElement>>;
       picture: B<React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>>;
@@ -145,7 +146,7 @@ declare module 'react' {
       tfoot: B<React.DetailedHTMLProps<React.HTMLAttributes<HTMLTableSectionElement>, HTMLTableSectionElement>>;
       th: B<React.DetailedHTMLProps<React.ThHTMLAttributes<HTMLTableCellElement>, HTMLTableCellElement>>;
       thead: B<React.DetailedHTMLProps<React.HTMLAttributes<HTMLTableSectionElement>, HTMLTableSectionElement>>;
-      time: B<React.DetailedHTMLProps<React.TimeHTMLAttributes<HTMLElement>, HTMLElement>>;
+      time: B<React.DetailedHTMLProps<React.TimeHTMLAttributes<HTMLTimeElement>, HTMLTimeElement>>;
       title: B<React.DetailedHTMLProps<React.HTMLAttributes<HTMLTitleElement>, HTMLTitleElement>>;
       tr: B<React.DetailedHTMLProps<React.HTMLAttributes<HTMLTableRowElement>, HTMLTableRowElement>>;
       track: B<React.DetailedHTMLProps<React.TrackHTMLAttributes<HTMLTrackElement>, HTMLTrackElement>>;
