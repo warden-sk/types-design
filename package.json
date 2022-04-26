@@ -1,8 +1,8 @@
 {
   "devDependencies": {
-    "@types/react": "^18.0.6",
-    "@typescript-eslint/eslint-plugin": "^5.20.0",
-    "@typescript-eslint/parser": "^5.20.0",
+    "@types/react": "^18.0.7",
+    "@typescript-eslint/eslint-plugin": "^5.21.0",
+    "@typescript-eslint/parser": "^5.21.0",
     "@warden-sk/babel-plugin": "^1.14.0",
     "@warden-sk/eslint-config": "github:warden-sk/eslint-config",
     "eslint": "^8.14.0",
