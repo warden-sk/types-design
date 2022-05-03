@@ -49,9 +49,6 @@ export const Flex = ['1', 'none'] as const;
 export const FlexBasis = [
   '0',
   '1/12',
-  '10/12',
-  '100',
-  '11/12',
   '2/12',
   '3/12',
   '4/12',
@@ -60,19 +57,23 @@ export const FlexBasis = [
   '7/12',
   '8/12',
   '9/12',
+  '10/12',
+  '11/12',
+  '100',
   'auto',
 ] as const;
 // https://drafts.csswg.org/css-flexbox-1/#propdef-flex-direction
 export const FlexDirection = ['column', 'column-reverse', 'row', 'row-reverse'] as const;
 // https://drafts.csswg.org/css-flexbox-1/#propdef-flex-wrap
 export const FlexWrap = ['nowrap', 'wrap', 'wrap-reverse'] as const;
-export const FontSize = ['-1', '-2', '1', '10', '2', '3', '4', '5', '6', '7', '8', '9'] as const;
+export const FontSize = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'] as const;
 // https://drafts.csswg.org/css-align/#propdef-justify-content
 export const JustifyContent = ['left', 'right', ...ContentDistribution, ...ContentPosition] as const;
 // https://drafts.csswg.org/css-align/#propdef-justify-items
 export const JustifyItems = ['baseline', 'stretch', ...SelfPosition] as const;
 // https://drafts.csswg.org/css-align/#propdef-justify-self
 export const JustifySelf = ['baseline', 'stretch', ...SelfPosition] as const;
+export const LineHeight = ['1', '2', '3', '4', '5'] as const;
 /**
  * Spacing
  */
@@ -98,8 +99,6 @@ export const S = [
 ] as const;
 export const MarginLeft = [
   '1/12',
-  '10/12',
-  '11/12',
   '2/12',
   '3/12',
   '4/12',
@@ -108,6 +107,8 @@ export const MarginLeft = [
   '7/12',
   '8/12',
   '9/12',
+  '10/12',
+  '11/12',
   ...S,
 ] as const;
 export const TextAlign = ['center', 'end', 'justify', 'left', 'right', 'start'] as const;

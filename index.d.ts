@@ -22,6 +22,7 @@ declare global {
     justifyContent?: EncodedResponsiveClassName<typeof t.JustifyContent[number]>;
     justifyItems?: EncodedResponsiveClassName<typeof t.JustifyItems[number]>;
     justifySelf?: EncodedResponsiveClassName<typeof t.JustifySelf[number]>;
+    lineHeight?: EncodedResponsiveClassName<typeof t.LineHeight[number]>;
     m?: EncodedResponsiveClassName<typeof t.S[number]>;
     mB?: EncodedResponsiveClassName<typeof t.S[number]>;
     mL?: EncodedResponsiveClassName<typeof t.MarginLeft[number]>;
