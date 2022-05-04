@@ -9,20 +9,11 @@ export const ContentPosition = ['center', 'end', 'flex-end', 'flex-start', 'star
 // https://drafts.csswg.org/css-display-3/#typedef-display-box
 export const DisplayBox = ['none'] as const;
 // https://drafts.csswg.org/css-display-3/#typedef-display-inside
-export const DisplayInside = ['flex', 'grid', 'table'] as const;
+export const DisplayInside = ['flex', 'grid'] as const;
 // https://drafts.csswg.org/css-display-3/#typedef-display-internal
-export const DisplayInternal = [
-  'table-caption',
-  'table-cell',
-  'table-column',
-  'table-column-group',
-  'table-footer-group',
-  'table-header-group',
-  'table-row',
-  'table-row-group',
-] as const;
+export const DisplayInternal = [] as const;
 // https://drafts.csswg.org/css-display-3/#typedef-display-legacy
-export const DisplayLegacy = ['inline-block', 'inline-flex', 'inline-grid', 'inline-table'] as const;
+export const DisplayLegacy = ['inline-block', 'inline-flex', 'inline-grid'] as const;
 // https://drafts.csswg.org/css-display-3/#typedef-display-outside
 export const DisplayOutside = ['block', 'inline'] as const;
 // https://drafts.csswg.org/css-align/#typedef-self-position
@@ -67,6 +58,7 @@ export const FlexDirection = ['column', 'column-reverse', 'row', 'row-reverse'] 
 // https://drafts.csswg.org/css-flexbox-1/#propdef-flex-wrap
 export const FlexWrap = ['nowrap', 'wrap', 'wrap-reverse'] as const;
 export const FontSize = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'] as const;
+export const FontWeight = ['100', '200', '300', '400', '500', '600', '700', '800', '900'] as const;
 // https://drafts.csswg.org/css-align/#propdef-justify-content
 export const JustifyContent = ['left', 'right', ...ContentDistribution, ...ContentPosition] as const;
 // https://drafts.csswg.org/css-align/#propdef-justify-items
