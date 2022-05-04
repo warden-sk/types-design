@@ -3,7 +3,7 @@
     "@types/react": "^18.0.8",
     "@typescript-eslint/eslint-plugin": "^5.22.0",
     "@typescript-eslint/parser": "^5.22.0",
-    "@warden-sk/babel-plugin": "^1.15.0",
+    "@warden-sk/babel-plugin": "^1.16.0",
     "@warden-sk/eslint-config": "github:warden-sk/eslint-config",
     "eslint": "^8.14.0",
     "eslint-plugin-prettier": "^4.0.0",
