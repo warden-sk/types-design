@@ -7,7 +7,7 @@ export const ContentDistribution = ['space-around', 'space-between', 'space-even
 // https://drafts.csswg.org/css-align/#typedef-content-position
 export const ContentPosition = ['center', 'end', 'flex-end', 'flex-start', 'start'] as const;
 // https://drafts.csswg.org/css-display-3/#typedef-display-box
-export const DisplayBox = ['none'] as const;
+export const DisplayBox = ['contents', 'none'] as const;
 // https://drafts.csswg.org/css-display-3/#typedef-display-inside
 export const DisplayInside = ['flex', 'grid'] as const;
 // https://drafts.csswg.org/css-display-3/#typedef-display-internal
