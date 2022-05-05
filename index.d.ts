@@ -4,10 +4,27 @@
 
 import 'react';
 import * as t from '@warden-sk/design/private/storage';
-import { EncodedClassName } from '@warden-sk/babel-plugin/private/decodeClassName';
-import { EncodedResponsiveClassName } from '@warden-sk/babel-plugin/private/decodeResponsiveClassName';
 
 declare global {
+  type DecodedClassName = string | undefined;
+
+  type DecodedResponsiveClassName = string;
+
+  type EncodedClassName =
+    | EncodedClassName[]
+    | boolean
+    | number
+    | string
+    | { [decodedClassName: string]: boolean | null | undefined }
+    | null
+    | undefined;
+
+  type EncodedResponsiveClassName<T extends string> =
+    | T
+    | { [breakpointName: string]: T }
+    | [T, { [breakpointName: string]: T }]
+    | [T];
+
   interface EnhancedElementAttributes {
     alignContent?: EncodedResponsiveClassName<typeof t.AlignContent[number]>;
     alignItems?: EncodedResponsiveClassName<typeof t.AlignItems[number]>;
@@ -41,6 +58,7 @@ declare global {
     textAlign?: EncodedResponsiveClassName<typeof t.TextAlign[number]>;
     width?: EncodedResponsiveClassName<typeof t.Width[number]>;
   }
+
   type EnhancedElement<T> = EnhancedElementAttributes & Omit<T, 'className'>;
 }
 declare module 'react' {
