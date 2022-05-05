@@ -3,7 +3,7 @@
  */
 
 import 'react';
-import * as t from './types';
+import * as t from '@warden-sk/design/private/storage';
 import { EncodedClassName } from '@warden-sk/babel-plugin/private/decodeClassName';
 import { EncodedResponsiveClassName } from '@warden-sk/babel-plugin/private/decodeResponsiveClassName';
 
