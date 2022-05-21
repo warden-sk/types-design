@@ -6,7 +6,7 @@
     "@warden-sk/babel-plugin": "^1.22.0",
     "@warden-sk/design": "^1.22.0",
     "@warden-sk/eslint-config": "github:warden-sk/eslint-config",
-    "eslint": "^8.15.0",
+    "eslint": "^8.16.0",
     "eslint-plugin-prettier": "^4.0.0",
     "prettier": "^2.6.2",
     "typescript": "^4.6.4"
