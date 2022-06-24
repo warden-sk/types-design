@@ -58,42 +58,28 @@ declare module 'react' {
       base: EnhancedElement<React.DetailedHTMLProps<React.BaseHTMLAttributes<HTMLBaseElement>, HTMLBaseElement>>;
       bdi: EnhancedElement<React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>>;
       bdo: EnhancedElement<React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>>;
-      blockquote: EnhancedElement<
-        React.DetailedHTMLProps<React.BlockquoteHTMLAttributes<HTMLQuoteElement>, HTMLQuoteElement>
-      >;
+      blockquote: EnhancedElement<React.DetailedHTMLProps<React.BlockquoteHTMLAttributes<HTMLQuoteElement>, HTMLQuoteElement>>;
       body: EnhancedElement<React.DetailedHTMLProps<React.HTMLAttributes<HTMLBodyElement>, HTMLBodyElement>>;
       br: EnhancedElement<React.DetailedHTMLProps<React.HTMLAttributes<HTMLBRElement>, HTMLBRElement>>;
-      button: EnhancedElement<
-        React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>
-      >;
-      canvas: EnhancedElement<
-        React.DetailedHTMLProps<React.CanvasHTMLAttributes<HTMLCanvasElement>, HTMLCanvasElement>
-      >;
+      button: EnhancedElement<React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>>;
+      canvas: EnhancedElement<React.DetailedHTMLProps<React.CanvasHTMLAttributes<HTMLCanvasElement>, HTMLCanvasElement>>;
       caption: EnhancedElement<React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>>;
       cite: EnhancedElement<React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>>;
       code: EnhancedElement<React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>>;
       col: EnhancedElement<React.DetailedHTMLProps<React.ColHTMLAttributes<HTMLTableColElement>, HTMLTableColElement>>;
-      colgroup: EnhancedElement<
-        React.DetailedHTMLProps<React.ColgroupHTMLAttributes<HTMLTableColElement>, HTMLTableColElement>
-      >;
+      colgroup: EnhancedElement<React.DetailedHTMLProps<React.ColgroupHTMLAttributes<HTMLTableColElement>, HTMLTableColElement>>;
       data: EnhancedElement<React.DetailedHTMLProps<React.DataHTMLAttributes<HTMLDataElement>, HTMLDataElement>>;
-      datalist: EnhancedElement<
-        React.DetailedHTMLProps<React.HTMLAttributes<HTMLDataListElement>, HTMLDataListElement>
-      >;
+      datalist: EnhancedElement<React.DetailedHTMLProps<React.HTMLAttributes<HTMLDataListElement>, HTMLDataListElement>>;
       dd: EnhancedElement<React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>>;
       del: EnhancedElement<React.DetailedHTMLProps<React.DelHTMLAttributes<HTMLModElement>, HTMLModElement>>;
-      details: EnhancedElement<
-        React.DetailedHTMLProps<React.DetailsHTMLAttributes<HTMLDetailsElement>, HTMLDetailsElement>
-      >;
+      details: EnhancedElement<React.DetailedHTMLProps<React.DetailsHTMLAttributes<HTMLDetailsElement>, HTMLDetailsElement>>;
       dfn: EnhancedElement<React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>>;
       div: EnhancedElement<React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>>;
       dl: EnhancedElement<React.DetailedHTMLProps<React.HTMLAttributes<HTMLDListElement>, HTMLDListElement>>;
       dt: EnhancedElement<React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>>;
       em: EnhancedElement<React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>>;
       embed: EnhancedElement<React.DetailedHTMLProps<React.EmbedHTMLAttributes<HTMLEmbedElement>, HTMLEmbedElement>>;
-      fieldset: EnhancedElement<
-        React.DetailedHTMLProps<React.FieldsetHTMLAttributes<HTMLFieldSetElement>, HTMLFieldSetElement>
-      >;
+      fieldset: EnhancedElement<React.DetailedHTMLProps<React.FieldsetHTMLAttributes<HTMLFieldSetElement>, HTMLFieldSetElement>>;
       figcaption: EnhancedElement<React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>>;
       figure: EnhancedElement<React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>>;
       footer: EnhancedElement<React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>>;
@@ -109,9 +95,7 @@ declare module 'react' {
       hr: EnhancedElement<React.DetailedHTMLProps<React.HTMLAttributes<HTMLHRElement>, HTMLHRElement>>;
       html: EnhancedElement<React.DetailedHTMLProps<React.HtmlHTMLAttributes<HTMLHtmlElement>, HTMLHtmlElement>>;
       i: EnhancedElement<React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>>;
-      iframe: EnhancedElement<
-        React.DetailedHTMLProps<React.IframeHTMLAttributes<HTMLIFrameElement>, HTMLIFrameElement>
-      >;
+      iframe: EnhancedElement<React.DetailedHTMLProps<React.IframeHTMLAttributes<HTMLIFrameElement>, HTMLIFrameElement>>;
       img: EnhancedElement<React.DetailedHTMLProps<React.ImgHTMLAttributes<HTMLImageElement>, HTMLImageElement>>;
       input: EnhancedElement<React.DetailedHTMLProps<React.InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>>;
       ins: EnhancedElement<React.DetailedHTMLProps<React.InsHTMLAttributes<HTMLModElement>, HTMLModElement>>;
@@ -128,44 +112,28 @@ declare module 'react' {
       meter: EnhancedElement<React.DetailedHTMLProps<React.MeterHTMLAttributes<HTMLMeterElement>, HTMLMeterElement>>;
       nav: EnhancedElement<React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>>;
       noscript: EnhancedElement<React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>>;
-      object: EnhancedElement<
-        React.DetailedHTMLProps<React.ObjectHTMLAttributes<HTMLObjectElement>, HTMLObjectElement>
-      >;
+      object: EnhancedElement<React.DetailedHTMLProps<React.ObjectHTMLAttributes<HTMLObjectElement>, HTMLObjectElement>>;
       ol: EnhancedElement<React.DetailedHTMLProps<React.OlHTMLAttributes<HTMLOListElement>, HTMLOListElement>>;
-      optgroup: EnhancedElement<
-        React.DetailedHTMLProps<React.OptgroupHTMLAttributes<HTMLOptGroupElement>, HTMLOptGroupElement>
-      >;
-      option: EnhancedElement<
-        React.DetailedHTMLProps<React.OptionHTMLAttributes<HTMLOptionElement>, HTMLOptionElement>
-      >;
-      output: EnhancedElement<
-        React.DetailedHTMLProps<React.OutputHTMLAttributes<HTMLOutputElement>, HTMLOutputElement>
-      >;
+      optgroup: EnhancedElement<React.DetailedHTMLProps<React.OptgroupHTMLAttributes<HTMLOptGroupElement>, HTMLOptGroupElement>>;
+      option: EnhancedElement<React.DetailedHTMLProps<React.OptionHTMLAttributes<HTMLOptionElement>, HTMLOptionElement>>;
+      output: EnhancedElement<React.DetailedHTMLProps<React.OutputHTMLAttributes<HTMLOutputElement>, HTMLOutputElement>>;
       p: EnhancedElement<React.DetailedHTMLProps<React.HTMLAttributes<HTMLParagraphElement>, HTMLParagraphElement>>;
       param: EnhancedElement<React.DetailedHTMLProps<React.ParamHTMLAttributes<HTMLParamElement>, HTMLParamElement>>;
       picture: EnhancedElement<React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>>;
       pre: EnhancedElement<React.DetailedHTMLProps<React.HTMLAttributes<HTMLPreElement>, HTMLPreElement>>;
-      progress: EnhancedElement<
-        React.DetailedHTMLProps<React.ProgressHTMLAttributes<HTMLProgressElement>, HTMLProgressElement>
-      >;
+      progress: EnhancedElement<React.DetailedHTMLProps<React.ProgressHTMLAttributes<HTMLProgressElement>, HTMLProgressElement>>;
       q: EnhancedElement<React.DetailedHTMLProps<React.QuoteHTMLAttributes<HTMLQuoteElement>, HTMLQuoteElement>>;
       rp: EnhancedElement<React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>>;
       rt: EnhancedElement<React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>>;
       ruby: EnhancedElement<React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>>;
       s: EnhancedElement<React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>>;
       samp: EnhancedElement<React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>>;
-      script: EnhancedElement<
-        React.DetailedHTMLProps<React.ScriptHTMLAttributes<HTMLScriptElement>, HTMLScriptElement>
-      >;
+      script: EnhancedElement<React.DetailedHTMLProps<React.ScriptHTMLAttributes<HTMLScriptElement>, HTMLScriptElement>>;
       section: EnhancedElement<React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>>;
-      select: EnhancedElement<
-        React.DetailedHTMLProps<React.SelectHTMLAttributes<HTMLSelectElement>, HTMLSelectElement>
-      >;
+      select: EnhancedElement<React.DetailedHTMLProps<React.SelectHTMLAttributes<HTMLSelectElement>, HTMLSelectElement>>;
       slot: EnhancedElement<React.DetailedHTMLProps<React.SlotHTMLAttributes<HTMLSlotElement>, HTMLSlotElement>>;
       small: EnhancedElement<React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>>;
-      source: EnhancedElement<
-        React.DetailedHTMLProps<React.SourceHTMLAttributes<HTMLSourceElement>, HTMLSourceElement>
-      >;
+      source: EnhancedElement<React.DetailedHTMLProps<React.SourceHTMLAttributes<HTMLSourceElement>, HTMLSourceElement>>;
       span: EnhancedElement<React.DetailedHTMLProps<React.HTMLAttributes<HTMLSpanElement>, HTMLSpanElement>>;
       strong: EnhancedElement<React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>>;
       style: EnhancedElement<React.DetailedHTMLProps<React.StyleHTMLAttributes<HTMLStyleElement>, HTMLStyleElement>>;
@@ -174,23 +142,13 @@ declare module 'react' {
       sup: EnhancedElement<React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>>;
       svg: React.SVGProps<SVGSVGElement>;
       table: EnhancedElement<React.DetailedHTMLProps<React.TableHTMLAttributes<HTMLTableElement>, HTMLTableElement>>;
-      tbody: EnhancedElement<
-        React.DetailedHTMLProps<React.HTMLAttributes<HTMLTableSectionElement>, HTMLTableSectionElement>
-      >;
+      tbody: EnhancedElement<React.DetailedHTMLProps<React.HTMLAttributes<HTMLTableSectionElement>, HTMLTableSectionElement>>;
       td: EnhancedElement<React.DetailedHTMLProps<React.TdHTMLAttributes<HTMLTableCellElement>, HTMLTableCellElement>>;
-      template: EnhancedElement<
-        React.DetailedHTMLProps<React.HTMLAttributes<HTMLTemplateElement>, HTMLTemplateElement>
-      >;
-      textarea: EnhancedElement<
-        React.DetailedHTMLProps<React.TextareaHTMLAttributes<HTMLTextAreaElement>, HTMLTextAreaElement>
-      >;
-      tfoot: EnhancedElement<
-        React.DetailedHTMLProps<React.HTMLAttributes<HTMLTableSectionElement>, HTMLTableSectionElement>
-      >;
+      template: EnhancedElement<React.DetailedHTMLProps<React.HTMLAttributes<HTMLTemplateElement>, HTMLTemplateElement>>;
+      textarea: EnhancedElement<React.DetailedHTMLProps<React.TextareaHTMLAttributes<HTMLTextAreaElement>, HTMLTextAreaElement>>;
+      tfoot: EnhancedElement<React.DetailedHTMLProps<React.HTMLAttributes<HTMLTableSectionElement>, HTMLTableSectionElement>>;
       th: EnhancedElement<React.DetailedHTMLProps<React.ThHTMLAttributes<HTMLTableCellElement>, HTMLTableCellElement>>;
-      thead: EnhancedElement<
-        React.DetailedHTMLProps<React.HTMLAttributes<HTMLTableSectionElement>, HTMLTableSectionElement>
-      >;
+      thead: EnhancedElement<React.DetailedHTMLProps<React.HTMLAttributes<HTMLTableSectionElement>, HTMLTableSectionElement>>;
       time: EnhancedElement<React.DetailedHTMLProps<React.TimeHTMLAttributes<HTMLTimeElement>, HTMLTimeElement>>;
       title: EnhancedElement<React.DetailedHTMLProps<React.HTMLAttributes<HTMLTitleElement>, HTMLTitleElement>>;
       tr: EnhancedElement<React.DetailedHTMLProps<React.HTMLAttributes<HTMLTableRowElement>, HTMLTableRowElement>>;
