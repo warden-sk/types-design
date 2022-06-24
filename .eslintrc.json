@@ -1,3 +1,13 @@
 {
-  "extends": "@warden-sk"
+  "extends": "@warden-sk",
+  "rules": {
+    "prettier/prettier": [
+      2,
+      {
+        "arrowParens": "avoid",
+        "printWidth": 240,
+        "singleQuote": true
+      }
+    ]
+  }
 }
