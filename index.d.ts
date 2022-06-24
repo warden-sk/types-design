@@ -3,9 +3,9 @@
  */
 
 import 'react';
-import * as t from '@warden-sk/design/private/storage';
-import { EncodedClassName } from '@warden-sk/babel-plugin/private/decodeClassName';
-import { EncodedResponsiveClassName } from '@warden-sk/babel-plugin/private/decodeResponsiveClassName';
+import type * as t from '@warden-sk/design/private/storage';
+import type { EncodedClassName } from '@warden-sk/babel-plugin/private/decodeClassName';
+import type { EncodedResponsiveClassName } from '@warden-sk/babel-plugin/private/decodeResponsiveClassName';
 
 declare global {
   interface EnhancedElementAttributes {
@@ -20,6 +20,7 @@ declare global {
     flexWrap?: EncodedResponsiveClassName<typeof t.FlexWrap[number]>;
     fontSize?: EncodedResponsiveClassName<typeof t.FontSize[number]>;
     fontWeight?: EncodedResponsiveClassName<typeof t.FontWeight[number]>;
+    height?: EncodedResponsiveClassName<typeof t.Height[number]>;
     justifyContent?: EncodedResponsiveClassName<typeof t.JustifyContent[number]>;
     justifyItems?: EncodedResponsiveClassName<typeof t.JustifyItems[number]>;
     justifySelf?: EncodedResponsiveClassName<typeof t.JustifySelf[number]>;
