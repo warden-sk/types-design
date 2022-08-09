@@ -25,13 +25,13 @@ declare global {
     justifyItems?: EncodedResponsiveClassName<typeof t.JustifyItems[number]>;
     justifySelf?: EncodedResponsiveClassName<typeof t.JustifySelf[number]>;
     lineHeight?: EncodedResponsiveClassName<typeof t.LineHeight[number]>;
-    m?: EncodedResponsiveClassName<typeof t.S[number]>;
-    mB?: EncodedResponsiveClassName<typeof t.S[number]>;
+    m?: EncodedResponsiveClassName<typeof t.Margin[number]>;
+    mB?: EncodedResponsiveClassName<typeof t.Margin[number]>;
     mL?: EncodedResponsiveClassName<typeof t.MarginLeft[number]>;
-    mR?: EncodedResponsiveClassName<typeof t.S[number]>;
-    mT?: EncodedResponsiveClassName<typeof t.S[number]>;
-    mX?: EncodedResponsiveClassName<typeof t.S[number]>;
-    mY?: EncodedResponsiveClassName<typeof t.S[number]>;
+    mR?: EncodedResponsiveClassName<typeof t.Margin[number]>;
+    mT?: EncodedResponsiveClassName<typeof t.Margin[number]>;
+    mX?: EncodedResponsiveClassName<typeof t.Margin[number]>;
+    mY?: EncodedResponsiveClassName<typeof t.Margin[number]>;
     p?: EncodedResponsiveClassName<typeof t.S[number]>;
     pB?: EncodedResponsiveClassName<typeof t.S[number]>;
     pL?: EncodedResponsiveClassName<typeof t.S[number]>;
@@ -39,6 +39,8 @@ declare global {
     pT?: EncodedResponsiveClassName<typeof t.S[number]>;
     pX?: EncodedResponsiveClassName<typeof t.S[number]>;
     pY?: EncodedResponsiveClassName<typeof t.S[number]>;
+    spaceX?: EncodedResponsiveClassName<typeof t.S[number]>;
+    spaceY?: EncodedResponsiveClassName<typeof t.S[number]>;
     textAlign?: EncodedResponsiveClassName<typeof t.TextAlign[number]>;
     width?: EncodedResponsiveClassName<typeof t.Width[number]>;
   }
