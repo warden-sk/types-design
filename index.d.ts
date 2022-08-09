@@ -13,6 +13,7 @@ declare global {
     alignItems?: EncodedResponsiveClassName<typeof t.AlignItems[number]>;
     alignSelf?: EncodedResponsiveClassName<typeof t.AlignSelf[number]>;
     className?: EncodedClassName;
+    cursor?: EncodedResponsiveClassName<typeof t.Cursor[number]>;
     display?: EncodedResponsiveClassName<typeof t.Display[number]>;
     flex?: EncodedResponsiveClassName<typeof t.Flex[number]>;
     flexBasis?: EncodedResponsiveClassName<typeof t.FlexBasis[number]>;
