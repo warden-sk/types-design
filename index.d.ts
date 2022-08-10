@@ -21,6 +21,9 @@ declare global {
     flexWrap?: EncodedResponsiveClassName<typeof t.FlexWrap[number]>;
     fontSize?: EncodedResponsiveClassName<typeof t.FontSize[number]>;
     fontWeight?: EncodedResponsiveClassName<typeof t.FontWeight[number]>;
+    gap?: EncodedResponsiveClassName<typeof t.S[number]>;
+    gapX?: EncodedResponsiveClassName<typeof t.S[number]>;
+    gapY?: EncodedResponsiveClassName<typeof t.S[number]>;
     height?: EncodedResponsiveClassName<typeof t.Height[number]>;
     justifyContent?: EncodedResponsiveClassName<typeof t.JustifyContent[number]>;
     justifyItems?: EncodedResponsiveClassName<typeof t.JustifyItems[number]>;
