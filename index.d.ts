@@ -24,6 +24,7 @@ declare global {
     gap?: EncodedResponsiveClassName<typeof t.S[number]>;
     gapX?: EncodedResponsiveClassName<typeof t.S[number]>;
     gapY?: EncodedResponsiveClassName<typeof t.S[number]>;
+    gridTemplateColumns?: EncodedResponsiveClassName<typeof t.GridTemplateColumns[number]>;
     height?: EncodedResponsiveClassName<typeof t.Height[number]>;
     justifyContent?: EncodedResponsiveClassName<typeof t.JustifyContent[number]>;
     justifyItems?: EncodedResponsiveClassName<typeof t.JustifyItems[number]>;
