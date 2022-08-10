@@ -47,6 +47,7 @@ declare global {
     spaceX?: EncodedResponsiveClassName<typeof t.S[number]>;
     spaceY?: EncodedResponsiveClassName<typeof t.S[number]>;
     textAlign?: EncodedResponsiveClassName<typeof t.TextAlign[number]>;
+    whiteSpace?: EncodedResponsiveClassName<typeof t.WhiteSpace[number]>;
     width?: EncodedResponsiveClassName<typeof t.Width[number]>;
   }
   type EnhancedElement<T> = EnhancedElementAttributes & Omit<T, 'className'>;
