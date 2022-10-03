@@ -51,7 +51,7 @@ declare global {
     width?: EncodedResponsiveClassName<typeof t.Width[number]>;
   }
   type EnhancedElement<T> = EnhancedElementAttributes & Omit<T, 'className'>;
-  type EnhancedJSXElement<T extends keyof JSX.IntrinsicElements> = EnhancedElementAttributes & Omit<JSX.IntrinsicElements[T], 'className'>;
+  type EnhancedJSXElement<T extends keyof JSX.IntrinsicElements> = EnhancedElement<JSX.IntrinsicElements[T]>;
 }
 declare module 'react' {
   namespace JSX {
