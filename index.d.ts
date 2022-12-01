@@ -2,10 +2,10 @@
  * Copyright 2022 Marek Kobida
  */
 
+import 'react';
+import type * as t from '@warden-sk/design/private/storage';
 import type { EncodedClassName } from '@warden-sk/babel-plugin/private/decodeClassName';
 import type { EncodedResponsiveClassName } from '@warden-sk/babel-plugin/private/decodeResponsiveClassName';
-import type * as t from '@warden-sk/design/private/storage';
-import 'react';
 
 declare global {
   interface EnhancedElementAttributes {
