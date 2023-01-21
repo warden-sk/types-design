@@ -37,6 +37,7 @@ declare global {
     mT?: EncodedResponsiveClassName<typeof t.Margin[number]>;
     mX?: EncodedResponsiveClassName<typeof t.Margin[number]>;
     mY?: EncodedResponsiveClassName<typeof t.Margin[number]>;
+    opacity?: EncodedResponsiveClassName<typeof t.Opacity[number]>;
     p?: EncodedResponsiveClassName<typeof t.S[number]>;
     pB?: EncodedResponsiveClassName<typeof t.S[number]>;
     pL?: EncodedResponsiveClassName<typeof t.S[number]>;
