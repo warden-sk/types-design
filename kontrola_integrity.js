@@ -104,8 +104,8 @@ http
       });
 
       response.on('end', () => {
-        const a = test(fileRows(file, 3134, 3314));
-        const b = test(fileRows(fs.readFileSync(path.resolve(__dirname, './index.d.ts')), 48, 202));
+        const a = test(fileRows(file, 3144, 3325));
+        const b = test(fileRows(fs.readFileSync(path.resolve(__dirname, './index.d.ts')), 59, 171));
 
         Object.entries(a).forEach(([aL, aR], i) => {
           if (!(aL in b)) console.log(`"${aL}" is not in "@types/warden-sk/design"`);
