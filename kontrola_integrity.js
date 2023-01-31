@@ -81,7 +81,7 @@ function test(rows) {
     l &&
       r &&
       notAllowed.indexOf(l) === -1 &&
-      (elements[l.replace(/"/g, '')] = r.replace(/^EnhancedElement</g, '').replace(/>>$/g, '>'));
+      (elements[l.replace(/"/g, '')] = r.replace(/^\$</g, '').replace(/>>$/g, '>'));
   });
 
   return elements;
@@ -105,7 +105,7 @@ http
 
       response.on('end', () => {
         const a = test(fileRows(file, 3144, 3325));
-        const b = test(fileRows(fs.readFileSync(path.resolve(__dirname, './index.d.ts')), 59, 171));
+        const b = test(fileRows(fs.readFileSync(path.resolve(__dirname, './index.d.ts')), 24, 136));
 
         Object.entries(a).forEach(([aL, aR], i) => {
           if (!(aL in b)) console.log(`"${aL}" is not in "@types/warden-sk/design"`);
