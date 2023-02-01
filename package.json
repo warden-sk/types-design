@@ -2,7 +2,6 @@
   "devDependencies": {
     "@types/react": "^18.0.27",
     "@warden-sk/babel-plugin": "file:../design/packages/babel-plugin",
-    "@warden-sk/design": "file:../design/packages/design",
     "typescript": "^4.9.4"
   },
   "name": "@types/warden-sk__design",
