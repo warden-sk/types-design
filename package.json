@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "@warden-sk/babel-plugin": "file:../design/packages/babel-plugin"
+    "@warden-sk/compiler": "file:../compiler"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",

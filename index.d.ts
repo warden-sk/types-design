@@ -2,13 +2,13 @@
  * Copyright 2023 Marek Kobida
  */
 
+import type availableJsxAttributes from '@warden-sk/compiler/availableJsxAttributes';
+import type { EncodedClassName } from '@warden-sk/compiler/helpers/decodeClassName';
+import type { EncodedResponsiveClassName } from '@warden-sk/compiler/helpers/decodeResponsiveClassName';
 import 'react';
-import type allowedJSXAttributes from '@warden-sk/babel-plugin/private/allowedJSXAttributes';
-import type { EncodedClassName } from '@warden-sk/babel-plugin/private/decodeClassName';
-import type { EncodedResponsiveClassName } from '@warden-sk/babel-plugin/private/decodeResponsiveClassName';
 import type React from 'react';
 
-type A = typeof allowedJSXAttributes;
+type A = typeof availableJsxAttributes;
 
 type B = {
   [C in keyof A]?: EncodedResponsiveClassName<A[C][number]>;
