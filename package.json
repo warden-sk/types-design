@@ -1,10 +1,8 @@
 {
-  "dependencies": {
-    "@warden-sk/compiler": "file:../compiler"
-  },
   "devDependencies": {
-    "@types/react": "^18.0.28",
-    "typescript": "^4.9.5"
+    "@types/react": "^18.0.31",
+    "@warden-sk/compiler": "file:../compiler",
+    "typescript": "^5.0.2"
   },
   "name": "@types/warden-sk__design",
   "repository": {
